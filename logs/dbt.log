@@ -1,0 +1,188 @@
+[0m09:48:32.827270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a381a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107867890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107867b10>]}
+
+
+============================== 09:48:32.830988 | 1b10c79f-3f01-4943-bd33-e2ac7ab8a920 ==============================
+[0m09:48:32.830988 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m09:48:32.831248 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'log_path': 'logs', 'log_format': 'default', 'profiles_dir': '/Users/Kruthika/.dbt', 'partial_parse': 'True', 'quiet': 'False', 'invocation_command': 'dbt init build_mau', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'target_path': 'None', 'use_colors': 'True', 'write_json': 'True', 'introspect': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'fail_fast': 'False', 'static_parser': 'True'}
+[0m09:48:32.840332 [info ] [MainThread]: Creating dbt configuration folder at /Users/Kruthika/.dbt
+[0m09:48:32.841303 [debug] [MainThread]: Starter project path: /Users/Kruthika/Documents/Data_226_Data_Warehouse/env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m09:48:32.844919 [info ] [MainThread]: 
+Your new dbt project "build_mau" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:48:32.845055 [info ] [MainThread]: Setting up your profile.
+[0m09:50:54.303293 [info ] [MainThread]: Profile build_mau written to /Users/Kruthika/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:50:54.340451 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 141.54483, "process_in_blocks": "0", "process_kernel_time": 0.320465, "process_mem_max_rss": "176734208", "process_out_blocks": "0", "process_user_time": 1.193117}
+[0m09:50:54.341833 [debug] [MainThread]: Command `dbt init` succeeded at 09:50:54.341724 after 141.55 seconds
+[0m09:50:54.342234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150403e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f3fe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f72f10>]}
+[0m09:50:54.342635 [debug] [MainThread]: Flushing usage events
+[0m09:50:54.788989 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:34:03.896076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e4c1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ef7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ef7b10>]}
+
+
+============================== 11:34:03.898855 | 27453fd6-3cc6-44d5-a878-9fe3b10ef2fc ==============================
+[0m11:34:03.898855 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:34:03.899124 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'warn_error': 'None', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'version_check': 'True', 'introspect': 'True', 'profiles_dir': '/Users/Kruthika/.dbt', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'use_experimental_parser': 'False', 'static_parser': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'cache_selected_only': 'False', 'no_print': 'None', 'printer_width': '80', 'invocation_command': 'dbt run'}
+[0m11:34:03.899376 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/Kruthika/Documents/Data_226_Data_Warehouse/sjsu-data226-FA25/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:34:03.900655 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.033667333, "process_in_blocks": "0", "process_kernel_time": 0.097495, "process_mem_max_rss": "106233856", "process_out_blocks": "0", "process_user_time": 0.501412}
+[0m11:34:03.900870 [debug] [MainThread]: Command `dbt run` failed at 11:34:03.900833 after 0.03 seconds
+[0m11:34:03.901002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f450f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f943b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d6bf00>]}
+[0m11:34:03.901134 [debug] [MainThread]: Flushing usage events
+[0m11:34:04.318571 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:34:53.650396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1059b41a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a5f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106a5fb10>]}
+
+
+============================== 11:34:53.652852 | c002b8a0-9771-4351-b030-6d755bbf924b ==============================
+[0m11:34:53.652852 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m11:34:53.653108 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/Kruthika/.dbt', 'no_print': 'None', 'log_format': 'default', 'debug': 'False', 'printer_width': '80', 'quiet': 'False', 'use_colors': 'True', 'empty': 'False', 'invocation_command': 'dbt run', 'fail_fast': 'False', 'write_json': 'True', 'log_path': 'logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'introspect': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False'}
+[0m11:34:53.653350 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/Kruthika/Documents/Data_226_Data_Warehouse/sjsu-data226-FA25/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:34:53.654405 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.03059725, "process_in_blocks": "0", "process_kernel_time": 0.103037, "process_mem_max_rss": "106332160", "process_out_blocks": "0", "process_user_time": 0.499199}
+[0m11:34:53.654590 [debug] [MainThread]: Command `dbt run` failed at 11:34:53.654554 after 0.03 seconds
+[0m11:34:53.654714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106aa90f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106afc3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068d3f00>]}
+[0m11:34:53.654845 [debug] [MainThread]: Flushing usage events
+[0m11:34:54.044584 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:05:44.700601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1085b01a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10965f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10965fb10>]}
+
+
+============================== 12:05:44.704594 | 4dc54848-732a-4ed6-8662-cf53b4016a30 ==============================
+[0m12:05:44.704594 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m12:05:44.704848 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'use_colors': 'True', 'log_path': 'logs', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'warn_error': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'write_json': 'True', 'introspect': 'True', 'target_path': 'None', 'partial_parse': 'True', 'version_check': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'fail_fast': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init build_mau', 'profiles_dir': '/Users/Kruthika/.dbt'}
+[0m12:05:44.715634 [debug] [MainThread]: Starter project path: /Users/Kruthika/Documents/Data_226_Data_Warehouse/env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m12:05:44.719927 [info ] [MainThread]: 
+Your new dbt project "build_mau" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:05:44.720059 [info ] [MainThread]: Setting up your profile.
+[0m12:06:15.362642 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 30.692629, "process_in_blocks": "0", "process_kernel_time": 0.105694, "process_mem_max_rss": "106463232", "process_out_blocks": "0", "process_user_time": 0.505202}
+[0m12:06:15.365617 [debug] [MainThread]: Command `dbt init` succeeded at 12:06:15.365267 after 30.70 seconds
+[0m12:06:15.366817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096a29e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109760710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094d3df0>]}
+[0m12:06:15.367569 [debug] [MainThread]: Flushing usage events
+[0m12:06:15.833231 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:06:21.715489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1039dc1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a8b890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a8bb10>]}
+
+
+============================== 12:06:21.718836 | a080ccf4-402d-4110-b6f5-097f33553ad1 ==============================
+[0m12:06:21.718836 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m12:06:21.719078 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init build_mau', 'indirect_selection': 'eager', 'target_path': 'None', 'write_json': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'profiles_dir': '/Users/Kruthika/.dbt', 'version_check': 'True', 'debug': 'False', 'printer_width': '80', 'introspect': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs', 'log_format': 'default', 'warn_error': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'partial_parse': 'True'}
+[0m12:06:21.726890 [debug] [MainThread]: Starter project path: /Users/Kruthika/Documents/Data_226_Data_Warehouse/env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m12:06:21.730704 [info ] [MainThread]: 
+Your new dbt project "build_mau" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:06:21.730830 [info ] [MainThread]: Setting up your profile.
+[0m12:08:03.637512 [info ] [MainThread]: Profile build_mau written to /Users/Kruthika/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m12:08:03.644807 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 101.95766, "process_in_blocks": "0", "process_kernel_time": 0.161642, "process_mem_max_rss": "171491328", "process_out_blocks": "0", "process_user_time": 0.743884}
+[0m12:08:03.646663 [debug] [MainThread]: Command `dbt init` succeeded at 12:08:03.646381 after 101.96 seconds
+[0m12:08:03.647475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a78640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d63e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10892f020>]}
+[0m12:08:03.648193 [debug] [MainThread]: Flushing usage events
+[0m12:08:04.122423 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:09:08.459840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1040cc1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f67890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f67b10>]}
+
+
+============================== 12:09:08.462353 | de18b9c8-12db-454c-a293-0542b7fd767c ==============================
+[0m12:09:08.462353 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m12:09:08.462591 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_path': 'logs', 'use_colors': 'True', 'fail_fast': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'target_path': 'None', 'profiles_dir': '/Users/Kruthika/.dbt', 'no_print': 'None', 'log_format': 'default', 'quiet': 'False', 'debug': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'write_json': 'True', 'printer_width': '80', 'empty': 'None', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'version_check': 'True'}
+[0m12:09:08.473073 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m12:09:08.473194 [info ] [MainThread]: python version: 3.13.1
+[0m12:09:08.473288 [info ] [MainThread]: python path: /Users/Kruthika/Documents/Data_226_Data_Warehouse/env/bin/python3.13
+[0m12:09:08.473375 [info ] [MainThread]: os info: macOS-15.7.1-arm64-arm-64bit-Mach-O
+[0m12:09:08.941585 [info ] [MainThread]: Using profiles dir at /Users/Kruthika/.dbt
+[0m12:09:08.941786 [info ] [MainThread]: Using profiles.yml file at /Users/Kruthika/.dbt/profiles.yml
+[0m12:09:08.941896 [info ] [MainThread]: Using dbt_project.yml file at /Users/Kruthika/Documents/Data_226_Data_Warehouse/sjsu-data226-FA25/dbt_project.yml
+[0m12:09:08.942091 [info ] [MainThread]: adapter type: snowflake
+[0m12:09:08.942199 [info ] [MainThread]: adapter version: 1.10.2
+[0m12:09:08.942291 [info ] [MainThread]: Configuration:
+[0m12:09:08.942376 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:09:08.942455 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:09:08.942535 [info ] [MainThread]: Required dependencies:
+[0m12:09:08.942637 [debug] [MainThread]: Executing "git --help"
+[0m12:09:08.960170 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:09:08.960572 [debug] [MainThread]: STDERR: "b''"
+[0m12:09:08.960692 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:09:08.960806 [info ] [MainThread]: Connection:
+[0m12:09:08.960925 [info ] [MainThread]:   account: SFEDU02-LVB17920
+[0m12:09:08.961015 [info ] [MainThread]:   user: LYNX
+[0m12:09:08.961098 [info ] [MainThread]:   database: USER_DB_LYNX
+[0m12:09:08.961181 [info ] [MainThread]:   warehouse: LYNX_QUERY_WH
+[0m12:09:08.961261 [info ] [MainThread]:   role: TRAINING_ROLE
+[0m12:09:08.961342 [info ] [MainThread]:   schema: analytics
+[0m12:09:08.961425 [info ] [MainThread]:   authenticator: None
+[0m12:09:08.961503 [info ] [MainThread]:   oauth_client_id: None
+[0m12:09:08.961584 [info ] [MainThread]:   query_tag: None
+[0m12:09:08.961661 [info ] [MainThread]:   client_session_keep_alive: False
+[0m12:09:08.961742 [info ] [MainThread]:   host: None
+[0m12:09:08.961818 [info ] [MainThread]:   port: None
+[0m12:09:08.961896 [info ] [MainThread]:   proxy_host: None
+[0m12:09:08.961972 [info ] [MainThread]:   proxy_port: None
+[0m12:09:08.962046 [info ] [MainThread]:   protocol: None
+[0m12:09:08.962125 [info ] [MainThread]:   connect_retries: 1
+[0m12:09:08.962199 [info ] [MainThread]:   connect_timeout: None
+[0m12:09:08.962285 [info ] [MainThread]:   retry_on_database_errors: False
+[0m12:09:08.962362 [info ] [MainThread]:   retry_all: False
+[0m12:09:08.962437 [info ] [MainThread]:   insecure_mode: False
+[0m12:09:08.962514 [info ] [MainThread]:   reuse_connections: True
+[0m12:09:08.962590 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m12:09:08.962836 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m12:09:09.015315 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m12:09:09.047233 [debug] [MainThread]: Using snowflake connection "debug"
+[0m12:09:09.047415 [debug] [MainThread]: On debug: select 1 as id
+[0m12:09:09.047521 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:09:11.805512 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.758 seconds
+[0m12:09:11.807551 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:09:11.808369 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:09:11.809041 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/Kruthika/Documents/Data_226_Data_Warehouse/sjsu-data226-FA25/dbt_project.yml> not found
+
+[0m12:09:11.816120 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 3.3842056, "process_in_blocks": "0", "process_kernel_time": 0.236591, "process_mem_max_rss": "200769536", "process_out_blocks": "0", "process_user_time": 0.861157}
+[0m12:09:11.817053 [debug] [MainThread]: Command `dbt debug` failed at 12:09:11.816835 after 3.39 seconds
+[0m12:09:11.817580 [debug] [MainThread]: Connection 'debug' was left open.
+[0m12:09:11.817941 [debug] [MainThread]: On debug: Close
+[0m12:09:11.998909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114341ba0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113e93650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d77460>]}
+[0m12:09:11.999876 [debug] [MainThread]: Flushing usage events
+[0m12:09:12.434447 [debug] [MainThread]: An error was encountered while trying to flush usage events
