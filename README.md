@@ -102,16 +102,6 @@ This structure supports flexible slicing by date, region, and metric type.
 * Anomaly detection in demand patterns
 * Real-time situational awareness
 
-## Contributors
 
-Group Project 9
-
-Bavishna Ashok Kumar
-
-Elsa Rose
-
-Kruthika Virupakshappa
-
-Shruti Naik
 
 
